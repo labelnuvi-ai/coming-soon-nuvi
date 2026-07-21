@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LABEL NUVI &mdash; Pre-Launch</title>
+    <meta name="description" content="LABEL NUVI - Contemporary luxury fashion. Collection I launching soon. Join the inner circle for early access.">
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Syne:wght@400;500;700;800&family=Playfair+Display:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
+    <!-- GSAP for smooth animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Custom Mouse-Following Cursor -->
+    <div id="custom-cursor">
+        <span class="cursor-text">EXPLORE</span>
+    </div>
+    
+    <!-- Subtle overlay grid for tech/fashion look -->
+    <div class="grid-overlay"></div>
+    
+    <!-- Noise overlay for high-end grain texture -->
+    <div class="noise-overlay"></div>
+
+    <!-- Soft Ambient Vignette Background -->
+    <div class="radial-glow"></div>
+    <div class="vignette-overlay"></div>
+
+    <!-- Kinetic Background Ambient Typography -->
+    <div class="kinetic-bg">
+        <div class="kinetic-track kinetic-track-left">
+            <span class="kinetic-text">LABEL NUVI &bull; COLLECTION 01 &bull; BANGALORE &bull; EST. 2026 &bull;</span>
+        </div>
+        <div class="kinetic-track kinetic-track-right">
+            <span class="kinetic-text outline">AUTUMN WINTER &bull; INNER CIRCLE &bull; LABEL NUVI &bull; PRE-RELEASE &bull;</span>
+        </div>
+    </div>
+
+    <!-- Infinite Scrolling Marquee (Top) -->
+    <div class="marquee marquee-top">
+        <div class="marquee-content">
+            <span>LABEL NUVI &bull; COLLECTION 01 &bull; PRE-RELEASE DEBUT &bull; BANGALORE &bull; </span>
+            <span>LABEL NUVI &bull; COLLECTION 01 &bull; PRE-RELEASE DEBUT &bull; BANGALORE &bull; </span>
+            <span>LABEL NUVI &bull; COLLECTION 01 &bull; PRE-RELEASE DEBUT &bull; BANGALORE &bull; </span>
+            <span>LABEL NUVI &bull; COLLECTION 01 &bull; PRE-RELEASE DEBUT &bull; BANGALORE &bull; </span>
+        </div>
+    </div>
+
+    <!-- Main Page Wrapper -->
+    <div class="app-container">
+        
+        <!-- Header -->
+        <header class="header">
+            <div class="header-left">
+                <a href="#" class="brand-name">LABEL NUVI</a>
+            </div>
+            <div class="header-center">
+                <span class="status-indicator">
+                    <span class="status-dot"></span>
+                    STATUS: PRE-RELEASE
+                </span>
+            </div>
+            <div class="header-right">
+                <a href="#" class="nav-link archive-btn">ARCHIVE</a>
+                <button class="menu-toggle" aria-label="Toggle Menu">
+                    <span class="menu-line"></span>
+                    <span class="menu-line"></span>
+                </button>
+            </div>
+        </header>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            
+            <!-- Spinning Circular Fashion Stamp Badge -->
+            <div class="spinning-badge-container">
+                <svg viewBox="0 0 100 100" class="spinning-badge">
+                    <path d="M 50,50 m -38,0 a 38,38 0 1,1 76,0 a 38,38 0 1,1 -76,0" id="badge-path" fill="none" />
+                    <text class="badge-text">
+                        <textPath href="#badge-path" startOffset="0%">
+                            LABEL NUVI &bull; BANGALORE &bull; COLLECTION 01 &bull; PRE-RELEASE &bull;
+                        </textPath>
+                    </text>
+                </svg>
+                <div class="badge-center-dot"></div>
+            </div>
+
+            <!-- Central 3D Interactive Smartphone -->
+            <div class="phone-perspective-wrapper">
+                <div class="phone-container-3d" id="phone-3d">
+                    <div class="phone-body">
+                        <!-- Speaker ear piece -->
+                        <div class="phone-speaker"></div>
+                        
+                        <!-- Screen area -->
+                        <div class="phone-screen" id="phone-screen-click">
+                            <!-- Overlay gradient -->
+                            <div class="screen-overlay"></div>
+                            
+                            <!-- Slider images inside phone -->
+                            <div class="screen-slides">
+                                <div class="slide active" data-look="LOOK 01" data-name="EDITORIAL CAMPAIGN">
+                                    <img src="couple_editorial.jpg" alt="Look 01 - Editorial Campaign">
+                                </div>
+                                <div class="slide" data-look="LOOK 04" data-name="CORE RIBBED TEE">
+                                    <img src="model1.jpg" alt="Look 04 - Core Ribbed Tee">
+                                </div>
+                                <div class="slide" data-look="LOOK 12" data-name="SILK COCKTAIL DRESS">
+                                    <img src="model2.jpg" alt="Look 12 - Silk Cocktail Dress">
+                                </div>
+                            </div>
+                            
+                            <!-- Inside Phone Text Layout -->
+                            <div class="screen-content">
+                                <div class="screen-top-info">
+                                    <span class="screen-label">COLLECTION 01</span>
+                                    <span class="screen-brand">LABEL NUVI</span>
+                                </div>
+                                
+                                <div class="screen-middle-brand">
+                                    <h2 class="screen-coming-soon">COMING</h2>
+                                    <h2 class="screen-coming-soon outline">SOON</h2>
+                                </div>
+                                
+                                <div class="screen-bottom-info">
+                                    <div class="look-meta">
+                                        <span id="screen-look-tag">LOOK 01</span>
+                                        <span id="screen-look-name">EDITORIAL CAMPAIGN</span>
+                                    </div>
+                                    <div class="screen-date-pill">
+                                        <span class="date-text">AUTUMN 2026</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Side buttons of phone mockup -->
+                        <div class="phone-button volume-up"></div>
+                        <div class="phone-button volume-down"></div>
+                        <div class="phone-button power"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Floating Control Center -->
+            <div class="control-center">
+                <!-- Helper text for phone interaction -->
+                <div class="tap-helper">
+                    <span class="helper-dot"></span>
+                    <span>TAP SCREEN TO EXPLORE LOOKS</span>
+                </div>
+
+                <!-- Countdown Section -->
+                <div class="countdown-container">
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="days">00</span>
+                        <span class="countdown-label">DAYS</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="hours">00</span>
+                        <span class="countdown-label">HRS</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="minutes">00</span>
+                        <span class="countdown-label">MIN</span>
+                    </div>
+                    <div class="countdown-divider">:</div>
+                    <div class="countdown-item">
+                        <span class="countdown-value" id="seconds">00</span>
+                        <span class="countdown-label">SEC</span>
+                    </div>
+                </div>
+
+                <!-- Subscription Box -->
+                <div class="subscription-card">
+                    <h3 class="card-title">JOIN THE INNER CIRCLE</h3>
+                    <p class="card-subtitle">Be the first to access Collection 01 before public release.</p>
+                    <form class="subscribe-form" id="subscribe-form">
+                        <div class="input-group">
+                            <input type="email" id="email-input" class="email-input" placeholder="ENTER YOUR EMAIL ADDRESS" required>
+                            <button type="submit" class="submit-btn" aria-label="Join Waitlist">
+                                <span class="btn-text">JOIN WAITLIST &rarr;</span>
+                            </button>
+                        </div>
+                        <div class="form-feedback" id="form-feedback"></div>
+                    </form>
+                </div>
+            </div>
+        </main>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-left">
+                <span class="copyright">&copy; 2026 LABEL NUVI. ALL RIGHTS RESERVED.</span>
+            </div>
+            <div class="footer-center">
+                <span class="location-coords">BANGALORE &bull; INDIA</span>
+            </div>
+            <div class="footer-right">
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">INSTAGRAM</a>
+                    <span class="social-divider">/</span>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link">PINTEREST</a>
+                    <span class="social-divider">/</span>
+                    <a href="mailto:atelier@nuvilabel.com" class="social-link">EMAIL</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Sliding Sidebar Menu -->
+    <div class="sidebar-menu" id="sidebar-menu">
+        <button class="close-sidebar" aria-label="Close Menu">
+            <i data-lucide="x"></i>
+        </button>
+        <div class="sidebar-content">
+            <div class="sidebar-brand">LABEL NUVI</div>
+            <nav class="sidebar-nav">
+                <a href="#" class="sidebar-link active">PRE-RELEASE</a>
+                <a href="#" class="sidebar-link disabled">COLLECTION I (LOCKED)</a>
+                <a href="#" class="sidebar-link disabled">THE ATELIER (LOCKED)</a>
+                <a href="#" class="sidebar-link disabled">EDITORIAL (LOCKED)</a>
+            </nav>
+            <div class="sidebar-footer">
+                <p>INQUIRIES: ATELIER@NUVILABEL.COM</p>
+                <div class="social-links">
+                    <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" class="social-link">INSTAGRAM</a>
+                    <span class="social-divider">/</span>
+                    <a href="https://pinterest.com" target="_blank" rel="noopener noreferrer" class="social-link">PINTEREST</a>
+                    <span class="social-divider">/</span>
+                    <a href="mailto:atelier@nuvilabel.com" class="social-link">EMAIL</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Infinite Scrolling Marquee (Bottom) -->
+    <div class="marquee marquee-bottom">
+        <div class="marquee-content">
+            <span>COLLECTION 01 &bull; REVEAL IN PROGRESS &bull; FORM & FUNCTION &bull; BANGALORE &bull; </span>
+            <span>COLLECTION 01 &bull; REVEAL IN PROGRESS &bull; FORM & FUNCTION &bull; BANGALORE &bull; </span>
+            <span>COLLECTION 01 &bull; REVEAL IN PROGRESS &bull; FORM & FUNCTION &bull; BANGALORE &bull; </span>
+            <span>COLLECTION 01 &bull; REVEAL IN PROGRESS &bull; FORM & FUNCTION &bull; BANGALORE &bull; </span>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
